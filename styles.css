@@ -1,0 +1,126 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.semester {
+    width: 600px;
+    height: auto;
+    margin: 20px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column; /* Set direction for children elements */
+    align-items: center;
+    padding: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}   
+
+.semester p {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.semester:hover {
+    box-shadow: 5px 5px 5px rgb(211, 211, 211);
+    transform: scale(1.02);
+}
+
+#createthingbttn {
+    width: 120px;
+    height: 35px;
+    border: none;
+    background-color: white;
+    transition: box-shadow 0.5s;
+} 
+
+#createthingbttn:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgb(211, 211, 211);
+    box-shadow: -5px -5px -5px rgb(255, 255, 255);
+}
+
+
+.text-input {
+    width: 90%; 
+    padding: 5px; 
+    box-sizing: border-box; 
+    resize: none;
+}
+
+/* Container Styles */
+#semester-holder{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 90%;
+    flex-wrap: wrap;
+    margin: 0 auto; 
+}
+
+
+
+.course {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 15px;
+    background-color: #fafafa;
+}
+
+
+.course-name-input{
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.2s;
+}
+
+.course-credits-input, 
+.Grade-picker {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.2s;
+}
+
+.course-name-input:focus, 
+.course-credits-input:focus, 
+.Grade-picker:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+#gpa-display {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.add-course-button, 
+.delete-semester-button{
+    background-color: white;
+    border: 1px solid rgb(205, 205, 205); 
+    transition: box-shadow .5s;
+    border-radius: 5px;
+}
+
+.delete-semester-button:hover, 
+.add-course-button:hover{
+    background-color:  rgb(240, 238, 238);
+    box-shadow: 5px 5px 5px rgb(197, 197, 197);
+}
+.delete-semester-button:active, 
+.add-course-button:active{
+    background-color: white;
+}
